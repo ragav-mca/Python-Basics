@@ -44,8 +44,19 @@ for i in range(0,x):
 print("The result after equalling with last char: ",min)
         
 
-
-
+Output:
+Enter the name 1: cat
+Enter the name 2: arrow
+cat
+arrow
+strlen name 1:  3
+strlen name 2:  5
+maximum:  arrow
+minimum:  cat
+strlen max:  5
+strlen min:  3
+The count of character to be equalled:  2
+result:  cattt
 
 
 
