@@ -9,3 +9,9 @@ for i in name:
     result.append(i)
 print(result)
 print("".join(result))
+
+
+Output:
+Enter the name: america
+['c', 'm', 'e', 'r', 'i', 'c', 'c']
+cmericc
