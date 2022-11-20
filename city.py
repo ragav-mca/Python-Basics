@@ -20,3 +20,15 @@ if count_a == 0:
 elif count_e == 0:
     print("There is no e in the city name")
 
+    
+Output:
+Case 1:
+Enter the name: chennai
+The number of occurences of e is:  1
+The number of occurences of a is:  1
+    
+Case 2:
+Enter the name: madurai
+The number of occurences of a is:  1
+The number of occurences of a is:  2
+There is no e in the city name      
