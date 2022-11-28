@@ -10,10 +10,8 @@ count_e = 0
 for i in name:
     if i == "a":
         count_a += 1
-        print("The number of occurences of a is: ", count_a)
     elif i == "e":
         count_e += 1
-        print("The number of occurences of e is: ", count_e)
     
 if count_a == 0:
     print("There is no a in the city name")
@@ -22,13 +20,5 @@ elif count_e == 0:
 
     
 Output:
-Case 1:
 Enter the name: chennai
-The number of occurences of e is:  1
-The number of occurences of a is:  1
-    
-Case 2:
-Enter the name: madurai
-The number of occurences of a is:  1
-The number of occurences of a is:  2
-There is no e in the city name      
+The number of a or e in the city name is:  2    
