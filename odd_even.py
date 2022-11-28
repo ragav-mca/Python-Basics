@@ -29,3 +29,25 @@ else:
 
 print("Even numbers: ", even_count)
 print("Odd numbers: ", odd_count)
+
+Output:
+case : 1
+Enter the number1: 4
+Enter the number2: 8
+All even
+Even numbers:  2
+Odd numbers:  0
+    
+case : 2
+Enter the number1: 12
+Enter the number2: 17
+Some even
+Even numbers:  1
+Odd numbers:  1
+    
+case : 3
+Enter the number1: 23
+Enter the number2: 27
+No even
+Even numbers:  0
+Odd numbers:  2
