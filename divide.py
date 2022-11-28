@@ -13,3 +13,12 @@ while x // y > 3:
     print("Result: ",x)
     countdiv += 1
 print("Number of times divided: ",countdiv)
+
+Output:
+Enter the number: 367
+Number:  367
+Result:  122
+Result:  40
+Result:  13
+Result:  4
+Number of times divided:  4
