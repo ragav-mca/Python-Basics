@@ -24,3 +24,11 @@ for char1 in a:
     else:
         if vowel_count == 0:
            print("The user word a has no vowels")
+
+Output:
+Enter the word: apple
+Enter the word with x or y to end
+Enter the word: python
+The user word a has no vowels
+The user word has y and the word python is a vowel
+The user word python has vowels
