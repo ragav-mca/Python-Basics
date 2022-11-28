@@ -17,3 +17,7 @@ while flag:
         count += 1
         start = a + 1
 print("Number of times aba appears: ",count)
+
+Output:
+Input String:  aba1aaba2bab3ababa
+Number of times aba appears:  4
