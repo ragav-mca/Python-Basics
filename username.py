@@ -9,9 +9,7 @@ no numeric at the start and no special chars allowed'
 
 username = input("Enter the name: ")
 a = len(username)
-#b = username.isalpha()
 print(a)
-#print(b)
 
 spl_char = "~`!#$%^&*()-+=;:<>,./@|[]"
 if(a < 4 or a > 8) or username[0].isdigit() or username.startswith("_") or username.endswith("_") or username + spl_char:
@@ -20,3 +18,9 @@ if(a < 4 or a > 8) or username[0].isdigit() or username.startswith("_") or usern
 if username.isalpha() or username.isdigit() or "_":
     print(username)
 
+
+Output:
+Enter the name: python
+6
+Username length should be >4 <8, no numeric at the start and no special chars allowed
+python
