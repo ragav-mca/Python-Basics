@@ -7,20 +7,38 @@ For eg - if input is 1b%  - the output should be 'Username length should be >4 <
 no numeric at the start and no special chars allowed' 
 """
 
-username = input("Enter the name: ")
+username=input("Enter the name: ")
 a = len(username)
-print(a)
-
 spl_char = "~`!#$%^&*()-+=;:<>,./@|[]"
-if(a < 4 or a > 8) or username[0].isdigit() or username.startswith("_") or username.endswith("_") or username + spl_char:
-    print("Username length should be >4 <8, no numeric at the start and no special chars allowed") 
+b = 0
+if a < 4 or a > 8 or username[0].isdigit() or username.startswith("_") or username.endswith("_"):
+    b+=1
 
-if username.isalpha() or username.isdigit() or "_":
-    print(username)
+for i in range(len(spl_char)):
+    if spl_char[i] in username:
+        b+=1
+     
+if b>=1:
+    print("Username is Invalid")
+else:
+    print("Username is valid")
 
 
 Output:
+Enter the name: _python
+Username is Invalid
+
+Enter the name: python_
+Username is Invalid
+
+Enter the name: 2python
+Username is Invalid
+
+Enter the name: pyth2on
+Username is valid
+
 Enter the name: python
-6
-Username length should be >4 <8, no numeric at the start and no special chars allowed
-python
+Username is valid
+
+Enter the name: pyth_on
+Username is valid
