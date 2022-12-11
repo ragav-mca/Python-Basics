@@ -10,35 +10,32 @@ no numeric at the start and no special chars allowed'
 username=input("Enter the name: ")
 a = len(username)
 spl_char = "~`!#$%^&*()-+=;:<>,./@|[]"
-b = 0
-if a < 4 or a > 8 or username[0].isdigit() or username.startswith("_") or username.endswith("_"):
-    b+=1
+b = 1
+c = 1
+if a < 4 or a > 8:
+    b=False
+    print("The username length is < than 4 or > than 8")
+ 
+if username[0].isdigit():
+    b=False
+    print("The username starts with number")
+    
+if username.startswith("_"):
+    b=False
+    print("The username starts with underscore")
+    
+if username.endswith("_"):
+    b=False
+    print("The username ends with underscore")
 
 for i in range(len(spl_char)):
     if spl_char[i] in username:
-        b+=1
-     
-if b>=1:
+        b=False
+        c=False
+if c==False:
+    print("The username consists of special character")
+
+if b==False:
     print("Username is Invalid")
 else:
     print("Username is valid")
-
-
-Output:
-Enter the name: _python
-Username is Invalid
-
-Enter the name: python_
-Username is Invalid
-
-Enter the name: 2python
-Username is Invalid
-
-Enter the name: pyth2on
-Username is valid
-
-Enter the name: python
-Username is valid
-
-Enter the name: pyth_on
-Username is valid
